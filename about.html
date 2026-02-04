@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | V Cure Dental & Implant Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATIONAL HEADER WITH DYNAMIC DROPDOWN -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">V CURE <span>DENTAL</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+
+                <!-- SERVICES DROPDOWN -->
+                <li class="dropdown">
+                    <a href="services.html" class="drop-trigger">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="implants.html"><i class="fas fa-tooth"></i> Dental Implants</a></li>
+                        <li><a href="root-canal.html"><i class="fas fa-bolt"></i> Root Canal (RCT)</a></li>
+                        <li><a href="aligners.html"><i class="fas fa-gem"></i> Clear Aligners</a></li>
+                        <li><a href="smile-makeover.html"><i class="fas fa-star"></i> Smile Makeover</a></li>
+                        <li><a href="zirconia-crowns.html"><i class="fas fa-crown"></i> Zirconia Crowns</a></li>
+                        <li><a href="kids-dentistry.html"><i class="fas fa-child"></i> Kids Dentistry</a></li>
+                        <li><a href="wisdom-tooth.html"><i class="fas fa-briefcase-medical"></i> Wisdom Tooth
+                                Removal</a></li>
+                        <li><a href="cleaning.html"><i class="fas fa-sparkles"></i> Cleaning & Polishing</a></li>
+                        <li><a href="full-mouth.html"><i class="fas fa-sync-alt"></i> Full Mouth Rehab</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book-appointment.html" class="btn-nav">Book Appointment</a></li>
+            </ul>
+
+            <!-- Mobile Toggle (Keep for responsiveness) -->
+            <button class="hamburger" onclick="toggleMobileMenu()" style="display:none;">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- IMMERSIVE HERO SECTION -->
+        <section class="hero-page"
+            style="padding: 120px 0; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=1920') center/cover;">
+            <div class="pattern-bg"></div>
+            <div class="container text-center reveal">
+                <h1 style="font-size: 5rem; line-height: 1; margin: 20px 0; color: #fff;">Pioneering <span
+                        class="text-gradient">Gentle</span> <br>Dental Excellence.</h1>
+                <p style="font-size: 1.4rem; max-width: 900px; margin: 0 auto 40px; color: #fff;">
+                    At V Cure Dental & Implant Centre, we believe a visit to the dentist should be something to look
+                    forward to.
+                    Discover our journey of creating painless smiles across Krishnagiri and Chennai.
+                </p>
+            </div>
+        </section>
+
+        <!-- STATS COUNTER SECTION (Matches Home Style) -->
+        <section class="container" style="margin-top: -80px; position: relative; z-index: 10;">
+            <div class="grid" style="grid-template-columns: repeat(4, 1fr);">
+                <div class="reveal glass-card text-center">
+                    <h2 class="counter" data-target="25" style="font-size: 3.5rem; color: var(--primary);">0</h2>
+                    <p style="font-weight: 700;">Years of Smiles</p>
+                </div>
+                <div class="reveal glass-card text-center">
+                    <h2 class="counter" data-target="50000" style="font-size: 3.5rem; color: var(--primary);">0</h2>
+                    <p style="font-weight: 700;">Happy Patients</p>
+                </div>
+                <div class="reveal glass-card text-center">
+                    <h2 class="counter" data-target="15" style="font-size: 3.5rem; color: var(--primary);">0</h2>
+                    <p style="font-weight: 700;">Dental Experts</p>
+                </div>
+                <div class="reveal glass-card text-center">
+                    <h2 class="counter" data-target="2" style="font-size: 3.5rem; color: var(--primary);">0</h2>
+                    <p style="font-weight: 700;">State-of-the-art Clinics</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSION & VISION: CORRECTED SIDE-BY-SIDE LAYOUT -->
+        <section class="container section-padding">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 60px;">
+
+                <!-- LEFT COLUMN: SMALL IMAGE -->
+                <div class="reveal" style="display: flex; justify-content: center;">
+                    <div style="position: relative; max-width: 500px; width: 100%;">
+                        <img src="https://images.unsplash.com/photo-1643660527071-52e37cf7c7ea?q=80&w=1170&auto=format&fit=crop"
+                            alt="Modern Clinic"
+                            style="width: 100%; border-radius: 40px; box-shadow: 0 40px 80px rgba(0,0,0,0.1); object-fit: cover; aspect-ratio: 1/1;">
+
+                        <!-- Floating Decorative Badge (Adds Immersion) -->
+                        <div class="glass-card"
+                            style="position: absolute; bottom: -20px; right: -20px; padding: 15px 25px; border-radius: 15px;">
+                            <span style="color: var(--primary); font-weight: 800; font-size: 1.2rem;">ISO</span>
+                            <p style="font-size: 0.7rem; font-weight: 700; margin: 0;">Certified Hygiene</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: MISSION & VISION BLOCKS -->
+                <div class="reveal" style="text-align: left;">
+
+                    <h2 style="margin-bottom: 30px; font-size: 2.5rem;">The V Cure <span
+                            class="text-gradient">Philosophy</span></h2>
+
+                    <!-- Mission Card -->
+                    <div class="glass-card"
+                        style="margin-bottom: 25px; border-left: 5px solid var(--primary); padding: 30px;">
+                        <h3
+                            style="color: var(--primary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px;">
+                            <i class="fas fa-bullseye" style="font-size: 1.4rem;"></i> Our Mission
+                        </h3>
+                        <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            To provide high-quality, ethical, and comfortable dental care focusing on long-term oral
+                            health and patient well-being.
+                        </p>
+                    </div>
+
+                    <!-- Vision Card -->
+                    <div class="glass-card" style="border-left: 5px solid var(--secondary); padding: 30px;">
+                        <h3
+                            style="color: var(--secondary); margin-bottom: 10px; display: flex; align-items: center; gap: 12px;">
+                            <i class="fas fa-eye" style="font-size: 1.4rem;"></i> Our Vision
+                        </h3>
+                        <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+                            To deliver modern, painless, and comprehensive dental solutions for patients of all ages
+                            using global standards of technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THE V CURE APPROACH (Interactive Step-by-Step) -->
+        <section class="section-padding" style="background: var(--bg-light); border-radius: 100px 100px 0 0;">
+            <div class="container">
+                <div class="text-center reveal" style="margin-bottom: 70px;">
+                    <span class="tagline">HOW WE WORK</span>
+                    <h2 style="font-size: 3rem;">Our Patient-First <span class="text-gradient">Approach</span></h2>
+                    <p style="color: var(--text-muted); margin-top: 10px;">Experience the gold standard in modern
+                        dentistry.</p>
+                </div>
+
+                <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 25px;">
+
+                    <!-- Step 01 -->
+                    <div class="reveal glass-card approach-card">
+                        <div class="step-num-badge">01</div>
+                        <div class="approach-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h4>Gentle Care</h4>
+                        <p>We prioritize your comfort above all, ensuring every procedure is as painless as possible.
+                        </p>
+                        <div class="approach-progress-bar"></div>
+                    </div>
+
+                    <!-- Step 02 -->
+                    <div class="reveal glass-card approach-card">
+                        <div class="step-num-badge">02</div>
+                        <div class="approach-icon"><i class="fas fa-comments"></i></div>
+                        <h4>Clear Dialogue</h4>
+                        <p>No medical jargon. We explain your treatment plan clearly with transparent pricing.</p>
+                        <div class="approach-progress-bar"></div>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="reveal glass-card approach-card">
+                        <div class="step-num-badge">03</div>
+                        <div class="approach-icon"><i class="fas fa-microscope"></i></div>
+                        <h4>Latest Tech</h4>
+                        <p>From Digital X-rays to Single-Visit RCT, we use the best tools for precision.</p>
+                        <div class="approach-progress-bar"></div>
+                    </div>
+
+                    <!-- Step 04 -->
+                    <div class="reveal glass-card approach-card">
+                        <div class="step-num-badge">04</div>
+                        <div class="approach-icon"><i class="fas fa-shield-virus"></i></div>
+                        <h4>Hygienic Excellence</h4>
+                        <p>Strict sterilization protocols that exceed international safety standards.</p>
+                        <div class="approach-progress-bar"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- THE PILLARS OF EXCELLENCE (Staggered Interactive Section) -->
+        <section class="section-padding" style="background: white; position: relative; overflow: hidden;">
+            <!-- Background Decorative Element -->
+            <div
+                style="position: absolute; top: 10%; right: -5%; width: 400px; height: 400px; background: rgba(0, 194, 255, 0.03); filter: blur(100px); border-radius: 50%;">
+            </div>
+
+            <div class="container">
+                <div class="text-center reveal" style="margin-bottom: 80px;">
+                    <span class="tagline">OUR CORE VALUES</span>
+                    <h2 style="font-size: 3rem;">Why We Are <span class="text-gradient">Different</span></h2>
+                    <p
+                        style="color: var(--text-muted); margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Beyond technology, we are built on a foundation of empathy and medical ethics.
+                    </p>
+                </div>
+
+                <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 40px; align-items: flex-start;">
+
+                    <!-- Pillar 1: Slightly Higher -->
+                    <div class="reveal pillar-card" style="margin-top: 0;">
+                        <div class="pillar-icon-box">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Patient Empathy</h3>
+                        <p>We understand dental anxiety. Our team is trained to provide a calming environment where your
+                            comfort is as important as your treatment.</p>
+                        <div class="pillar-decoration"></div>
+                    </div>
+
+                    <!-- Pillar 2: Center (Slightly Lower) -->
+                    <div class="reveal pillar-card" style="margin-top: 0px;">
+                        <div class="pillar-icon-box" style="background: var(--secondary);">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Scientific Precision</h3>
+                        <p>Every diagnosis is backed by AI-driven digital imaging and German-engineered equipment to
+                            ensure 100% accuracy in your care.</p>
+                        <div class="pillar-decoration" style="background: var(--secondary);"></div>
+                    </div>
+
+                    <!-- Pillar 3: Slightly Higher -->
+                    <div class="reveal pillar-card" style="margin-top: 0;">
+                        <div class="pillar-icon-box">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Ethical Integrity</h3>
+                        <p>Transparent pricing and honest consultations. We only recommend treatments that are essential
+                            for your long-term oral health.</p>
+                        <div class="pillar-decoration"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        < <section class="container section-padding reveal">
+            <div class="glass-card"
+                style="background: #25D366; color: white; border: none; display: flex; justify-content: space-between; align-items: center; padding: 60px;">
+                <div style="text-align: left;">
+                    <h2 style="font-size: 2.5rem;">Have a question about a service?</h2>
+                    <p style="font-size: 1.2rem; opacity: 0.9;">Get an instant consultation or quote via WhatsApp.</p>
+                </div>
+                <a href="https://wa.me/yournumber" class="btn-main"
+                    style="background: white; color: #25D366; display: flex; align-items: center; gap: 10px;">
+                    <i class="fab fa-whatsapp"></i> Message Us Now
+                </a>
+            </div>
+            </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="reveal">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; display: block;">V-Cure
+                        <span>Dental specialist</span></a>
+                    <p>Pioneering the future of healthcare with 25 years of excellence. We provide world-class medical
+                        services with a commitment to compassion, innovation, and patient-centered care.</p>
+                    <div class="social-links" style="margin-top: 30px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Dental Implants</a></li>
+                        <li><a href="services.html">Root Canal</a></li>
+                        <li><a href="services.html">Clear Aligners</a></li>
+                        <li><a href="services.html">Smile Makeover</a></li>
+                        <li><a href="services.html">Zirconia Crowns</a></li>
+                        <li><a href="services.html">Kids Dentistry</a></li>
+                        <li><a href="services.html">Wisdom Tooth Removal</a></li>
+                        <li><a href="services.html">Cleaning and Polishing</a></li>
+                        <li><a href="services.html">Full Mouth Rehabilitation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Krishnagiri Branch – Rayappa Street Iyyappanthangal Branch – Chennai<br></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Emergency: +91 123 456 7890<br>Admin: +91 000 111 2222</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@V-Cure Dental specialist.com<br>appointments@V-Cure Dental specialist.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 V-Cure. All rights reserved.</p>
+                <div class="flex">
+                    <a href="#" style="color: #718096; text-decoration: none;">Privacy Policy</a>
+                    <span style="color: #2D3748;">|</span>
+                    <a href="#" style="color: #718096; text-decoration: none;">Terms of Service</a>
+                    <span style="color: #2D3748;">|</span>
+                    <a href="#" style="color: #718096; text-decoration: none;">Developed by AspirenTech Business
+                        Solutions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | V Cure Dental & Implant Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+<header>
+    <nav class="container">
+        <a href="index.html" class="logo">V CURE <span>DENTAL</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            <!-- SERVICES DROPDOWN -->
+            <li class="dropdown">
+                <a href="services.html" class="drop-trigger">Services <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="implants.html"><i class="fas fa-tooth"></i> Dental Implants</a></li>
+                    <li><a href="root-canal.html"><i class="fas fa-bolt"></i> Root Canal (RCT)</a></li>
+                    <li><a href="aligners.html"><i class="fas fa-gem"></i> Clear Aligners</a></li>
+                    <li><a href="smile-makeover.html"><i class="fas fa-star"></i> Smile Makeover</a></li>
+                    <li><a href="zirconia-crowns.html"><i class="fas fa-crown"></i> Zirconia Crowns</a></li>
+                    <li><a href="kids-dentistry.html"><i class="fas fa-child"></i> Kids Dentistry</a></li>
+                    <li><a href="wisdom-tooth.html"><i class="fas fa-briefcase-medical"></i> Wisdom Tooth Removal</a></li>
+                    <li><a href="cleaning.html"><i class="fas fa-sparkles"></i> Cleaning & Polishing</a></li>
+                    <li><a href="full-mouth.html"><i class="fas fa-sync-alt"></i> Full Mouth Rehab</a></li>
+                </ul>
+            </li>
+
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book-appointment.html" class="btn-nav">Book Appointment</a></li>
+        </ul>
+        
+        <!-- Mobile Toggle (Keep for responsiveness) -->
+        <button class="hamburger" onclick="toggleMobileMenu()" style="display:none;">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+    <main>
+        <!-- IMMERSIVE SERVICES HERO -->
+        <section class="hero-page"
+            style="padding: 120px 0; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=1920') center/cover;">
+            <div class="pattern-bg"></div>
+            <div class="container text-center reveal">
+                <h1 style="font-size: 2 rem; line-height: 1.1; margin: 20px 0;color: #fff;">Our Expertise</h1>
+                <h1 style="font-size: 4.5rem; line-height: 1.1; margin: 20px 0;color: #fff;">Specialized <span
+                        class="text-gradient">Dental Solutions</span></h1>
+                <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto; color: #fff;">
+                    From routine check-ups to advanced full-mouth rehabilitations, we use global
+                    standards of technology to ensure your treatment is painless and precise.
+                </p>
+            </div>
+        </section>
+
+        <!-- MAIN SERVICES GRID -->
+        <section class="container section-padding">
+            <h1 style="margin-bottom: 60px; font-size: 2.5rem;text-align: center ;">Our Services</h1>
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 40px;">
+
+                <!-- Dental Implants -->
+                <div class="reveal glass-card service-detail-card">
+                    <div class="service-icon-header">
+                        <i class="fas fa-tooth"></i>
+                        <h3>Dental Implants</h3>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fas fa-check"></i> Natural appearance</li>
+                        <li><i class="fas fa-check"></i> Long lasting</li>
+                        <li><i class="fas fa-check"></i> Prevents bone loss</li>
+                    </ul>
+                    <div class="service-footer-tags">
+                        <span>Types: Single, Multiple, Full Mouth, Implant Dentures</span>
+                    </div>
+                </div>
+
+                <!-- Root Canal -->
+                <div class="reveal glass-card service-detail-card">
+                    <div class="service-icon-header">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Root Canal (RCT)</h3>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fas fa-check"></i> Single visit option</li>
+                        <li><i class="fas fa-check"></i> Digital X-rays</li>
+                        <li><i class="fas fa-check"></i> High precision technique</li>
+                    </ul>
+                </div>
+
+                <!-- Clear Aligners -->
+                <div class="reveal glass-card service-detail-card">
+                    <div class="service-icon-header">
+                        <i class="fas fa-gem"></i>
+                        <h3>Clear Aligners</h3>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fas fa-check"></i> Invisible treatment</li>
+                        <li><i class="fas fa-check"></i> Removable & Comfortable</li>
+                        <li><i class="fas fa-check"></i> Faster results</li>
+                    </ul>
+                </div>
+
+                <!-- Smile Makeover -->
+                <div class="reveal glass-card service-detail-card">
+                    <div class="service-icon-header">
+                        <i class="fas fa-star"></i>
+                        <h3>Smile Makeover</h3>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fas fa-check"></i> Porcelain Veneers</li>
+                        <li><i class="fas fa-check"></i> Professional Whitening</li>
+                        <li><i class="fas fa-check"></i> Gum Contouring</li>
+                    </ul>
+                </div>
+
+                <!-- Zirconia Crowns -->
+                <div class="reveal glass-card service-detail-card">
+                    <div class="service-icon-header">
+                        <i class="fas fa-crown"></i>
+                        <h3>Zirconia Crowns</h3>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fas fa-check"></i> 100% Metal-free</li>
+                        <li><i class="fas fa-check"></i> High mechanical strength</li>
+                        <li><i class="fas fa-check"></i> Natural translucency</li>
+                    </ul>
+                </div>
+
+                <!-- Kids Dentistry -->
+                <div class="reveal glass-card service-detail-card">
+                    <div class="service-icon-header">
+                        <i class="fas fa-child"></i>
+                        <h3>Kids Dentistry</h3>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fas fa-check"></i> Painless Fillings</li>
+                        <li><i class="fas fa-check"></i> Space maintainers</li>
+                        <li><i class="fas fa-check"></i> Preventive Fluoride care</li>
+                    </ul>
+                </div>
+
+                <!-- Wisdom Tooth Removal -->
+                <div class="reveal glass-card service-detail-card">
+                    <div class="service-icon-header">
+                        <i class="fas fa-briefcase-medical"></i>
+                        <h3>Wisdom Tooth Removal</h3>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fas fa-check"></i> Safe & painless surgery</li>
+                        <li><i class="fas fa-check"></i> Atraumatic extraction</li>
+                        <li><i class="fas fa-check"></i> Quick post-op recovery</li>
+                    </ul>
+                </div>
+
+                <!-- Cleaning & Polishing -->
+                <div class="reveal glass-card service-detail-card">
+                    <div class="service-icon-header">
+                        <i class="fas fa-tooth"></i>
+                        <h3>Cleaning & Polishing</h3>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fas fa-check"></i> Removes stubborn stains</li>
+                        <li><i class="fas fa-check"></i> Fresher breath</li>
+                        <li><i class="fas fa-check"></i> Ultrasonic scaling</li>
+                    </ul>
+                </div>
+
+                <!-- Full Mouth Rehabilitation -->
+                <div class="reveal glass-card service-detail-card" style="border: 2px solid var(--primary);">
+                    <div class="service-icon-header">
+                        <i class="fas fa-sync-alt" style="color: var(--primary);"></i>
+                        <h3>Full Mouth Rehab</h3>
+                    </div>
+                    <ul class="service-bullets">
+                        <li><i class="fas fa-check"></i> For Worn</li>
+                        <li><i class="fas fa-check"></i> Missing</li>
+                        <li><i class="fas fa-check"></i> Damaged Teeth.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WHATSAPP CTA -->
+        <section class="container section-padding reveal">
+            <div class="glass-card"
+                style="background: #25D366; color: white; border: none; display: flex; justify-content: space-between; align-items: center; padding: 60px;">
+                <div style="text-align: left;">
+                    <h2 style="font-size: 2.5rem;">Have a question about a service?</h2>
+                    <p style="font-size: 1.2rem; opacity: 0.9;">Get an instant consultation or quote via WhatsApp.</p>
+                </div>
+                <a href="https://wa.me/yournumber" class="btn-main"
+                    style="background: white; color: #25D366; display: flex; align-items: center; gap: 10px;">
+                    <i class="fab fa-whatsapp"></i> Message Us Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="reveal">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; display: block;">V-Cure
+                        <span>Dental specialist</span></a>
+                    <p>Pioneering the future of healthcare with 25 years of excellence. We provide world-class medical
+                        services with a commitment to compassion, innovation, and patient-centered care.</p>
+                    <div class="social-links" style="margin-top: 30px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Dental Implants</a></li>
+                        <li><a href="services.html">Root Canal</a></li>
+                        <li><a href="services.html">Clear Aligners</a></li>
+                        <li><a href="services.html">Smile Makeover</a></li>
+                        <li><a href="services.html">Zirconia Crowns</a></li>
+                        <li><a href="services.html">Kids Dentistry</a></li>
+                        <li><a href="services.html">Wisdom Tooth Removal</a></li>
+                        <li><a href="services.html">Cleaning and Polishing</a></li>
+                        <li><a href="services.html">Full Mouth Rehabilitation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Krishnagiri Branch – Rayappa Street Iyyappanthangal Branch – Chennai<br></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Emergency: +91 123 456 7890<br>Admin: +91 000 111 2222</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@V-Cure Dental specialist.com<br>appointments@V-Cure Dental specialist.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 V-Cure. All rights reserved.</p>
+                <div class="flex">
+                    <a href="#" style="color: #718096; text-decoration: none;">Privacy Policy</a>
+                    <span style="color: #2D3748;">|</span>
+                    <a href="#" style="color: #718096; text-decoration: none;">Terms of Service</a>
+                    <span style="color: #2D3748;">|</span>
+                    <a href="#" style="color: #718096; text-decoration: none;">Developed by AspirenTech Business
+                        Solutions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

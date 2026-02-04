@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | V Cure Dental & Implant Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER (Right-Aligned Nav) -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">V CURE <span>DENTAL</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="book-appointment.html" class="btn-nav">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- IMMERSIVE CONTACT HERO -->
+        <section class="hero-page"
+            style="padding: 120px 0; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=1920') center/cover;">
+            <div class="pattern-bg"></div>
+            <div class="container text-center reveal">
+                <span class="tagline" style="background:var(--secondary); color:white;">WE ARE HERE FOR YOU</span>
+                <h1 style="font-size: 5rem; color: white; margin: 20px 0;">Get In <span
+                        style="color:var(--secondary)">Touch.</span></h1>
+                <p style="font-size: 1.4rem; color: #ddd; max-width: 800px; margin: 0 auto;">Have a question? Reach out
+                    to our experts at Krishnagiri or Chennai. We typically respond within an hour.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT METHODS GRID -->
+        <section class="container" style="margin-top: -80px; position: relative; z-index: 10;">
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <!-- Phone Card -->
+                <div class="reveal glass-card text-center contact-method-card">
+                    <div class="spec-icon-circle"><i class="fas fa-phone-alt"></i></div>
+                    <h3>Call Us</h3>
+                    <p>Primary: +91 123 456 7890</p>
+                    <p>Emergency: +91 098 765 4321</p>
+                </div>
+                <!-- WhatsApp Card -->
+                <div class="reveal glass-card text-center contact-method-card"
+                    style="border-bottom: 5px solid #25D366;">
+                    <div class="spec-icon-circle" style="background:#25D366; color:white;"><i
+                            class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p>Instant Support Available</p>
+                    <a href="https://wa.me/911234567890" target="_blank" class="spec-link">Start Chat Now <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Email Card -->
+                <div class="reveal glass-card text-center contact-method-card">
+                    <div class="spec-icon-circle"><i class="fas fa-envelope"></i></div>
+                    <h3>Email Us</h3>
+                    <p>info@vcuredental.com</p>
+                    <p>support@vcuredental.com</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DUAL LOCATION & FORM SECTION -->
+        <section class="container section-padding">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
+
+                <!-- LEFT: Location Info -->
+                <div class="reveal">
+                    <span class="tagline">VISIT OUR CLINICS</span>
+                    <h2 style="margin: 20px 0;">Our Branches</h2>
+
+                    <!-- Branch 1 -->
+                    <div class="glass-card branch-card reveal" style="margin-bottom: 25px;">
+                        <div class="flex2">
+                            <i class="fas fa-map-marker-alt" style="font-size: 2rem; color: var(--primary);"></i>
+                            <div>
+                                <h4>Krishnagiri Branch</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-muted);">Opposite Town Hall, Main Road,
+                                    Krishnagiri, Tamil Nadu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Branch 2 -->
+                    <div class="glass-card branch-card reveal">
+                        <div class="flex3">
+                            <i class="fas fa-map-marker-alt" style="font-size: 2rem; color: var(--secondary);"></i>
+                            <div>
+                                <h4>Chennai Branch</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-muted);">Mount-Poonamallee Rd,
+                                    Iyyappanthangal, Chennai, Tamil Nadu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opening Hours -->
+                    <div class="glass-card reveal" style="margin-top: 30px; background: var(--bg-light);">
+                        <h4 style="margin-bottom:15px;"><i class="fas fa-clock"></i> Opening Hours</h4>
+                        <div class="flex" style="justify-content: space-between;">
+                            <span>Monday - Saturday</span>
+                            <strong>9:00 AM - 8:30 PM</strong>
+                        </div>
+                        <div class="flex" style="justify-content: space-between; margin-top: 10px;">
+                            <span>Sunday</span>
+                            <strong>By Appointment Only</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Immersive Contact Form -->
+               <div class="reveal glass-card" style="padding: 50px; border-radius: 40px;">
+    <h3>Send a Message</h3>
+    <p style="margin-bottom: 30px; color: var(--text-muted);">Fill out the form below and we'll get back to you shortly.</p>
+    
+    <!-- Functional Web3Form -->
+    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
+        
+        <!-- Configuration -->
+        <input type="hidden" name="access_key" value="df4348fd-7162-418b-8cca-20af426b3eda">
+        <input type="hidden" name="subject" value="New Contact Inquiry - V Cure Dental">
+        <input type="hidden" name="from_name" value="V Cure Website Contact Bot">
+
+        <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+            <!-- Name -->
+            <div class="input-wrapper">
+                <i class="fas fa-user"></i>
+                <input type="text" name="Patient_Name" placeholder="Your Name" required>
+            </div>
+            <!-- Phone -->
+            <div class="input-wrapper">
+                <i class="fas fa-phone-alt"></i>
+                <input type="tel" name="Phone_Number" placeholder="Phone Number" required>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="input-wrapper" style="margin-top:20px;">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="Email_Address" placeholder="Email Address" required style="width:100%;">
+        </div>
+
+        <!-- Branch Selection -->
+        <div class="input-wrapper" style="margin-top:20px;">
+            <i class="fas fa-map-marker-alt"></i>
+            <select name="Preferred_Branch" style="width:100%;" required>
+                <option value="" disabled selected>Select Preferred Branch</option>
+                <option value="Krishnagiri">Krishnagiri Branch</option>
+                <option value="Chennai">Chennai (Iyyappanthangal)</option>
+            </select>
+        </div>
+
+        <!-- Message -->
+        <div class="input-wrapper" style="margin-top:20px;">
+            <i class="fas fa-comment-dots" style="top: 25px; transform: none;"></i>
+            <textarea name="Message" placeholder="Your Message" rows="5" required style="width:100%; padding-top: 20px !important;"></textarea>
+        </div>
+
+        <button type="submit" id="contactSubmitBtn" class="btn-main" style="width: 100%; border: none; cursor: pointer; margin-top: 30px;">
+            Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+
+        <!-- Status Result Message -->
+        <div id="contact-result" style="margin-top: 20px; text-align: center; font-weight: 700;"></div>
+    </form>
+</div>
+            </div>
+        </section>
+
+        <!-- DUAL PINPOINT MAP (Full Width Immersive) -->
+        <section class="container reveal" style="margin-bottom: 100px;">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <span class="tagline">LOCATE US</span>
+                <h2>Find Us on the Map</h2>
+            </div>
+
+            <!-- Map Container Grid -->
+            <div class="grid"
+                style="grid-template-columns: 1fr 1fr; gap: 20px; height: 600px; border-radius: 40px; overflow: hidden; box-shadow: var(--shadow); border: 8px solid white;">
+
+                <!-- KRISHNAGIRI MAP -->
+                <div style="position: relative; height: 100%;">
+                    <div class="map-label">Krishnagiri Branch</div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.8888792846687!2d78.2134812757186!3d12.523519824542406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac35162f8b74f9%3A0xd8a8df33ecf5c0dd!2sV%20CURE%20DENTAL%20AND%20IMPLANT%20CENTRE!5e0!3m2!1sen!2sin!4v1770100649055!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- CHENNAI MAP -->
+                <div style="position: relative; height: 100%;">
+                    <div class="map-label" style="background: var(--secondary);">Chennai Branch</div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5907.0353537756955!2d80.1336794976444!3d13.03764508362783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261ae95362e21%3A0xdc2b2b70b1bc0e28!2sV%20CURE%20DENTAL%20AND%20IMPLANT%20CENTRE!5e0!3m2!1sen!2sin!4v1770100609307!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="reveal">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; display: block;">V-Cure
+                        <span>Dental specialist</span></a>
+                    <p>Pioneering the future of healthcare with 25 years of excellence. We provide world-class medical
+                        services with a commitment to compassion, innovation, and patient-centered care.</p>
+                    <div class="social-links" style="margin-top: 30px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Dental Implants</a></li>
+                        <li><a href="services.html">Root Canal</a></li>
+                        <li><a href="services.html">Clear Aligners</a></li>
+                        <li><a href="services.html">Smile Makeover</a></li>
+                        <li><a href="services.html">Zirconia Crowns</a></li>
+                        <li><a href="services.html">Kids Dentistry</a></li>
+                        <li><a href="services.html">Wisdon Tooth Removal</a></li>
+                        <li><a href="services.html">Cleaning and Polishing</a></li>
+                        <li><a href="services.html">Full Mouth Rehabilitation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Krishnagiri Branch – Rayappa Street Iyyappanthangal Branch – Chennai<br></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Emergency: +91 123 456 7890<br>Admin: +91 000 111 2222</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@V-Cure Dental specialist.com<br>appointments@V-Cure Dental specialist.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 V-Cure. All rights reserved.</p>
+                <div class="flex">
+                    <a href="#" style="color: #718096; text-decoration: none;">Privacy Policy</a>
+                    <span style="color: #2D3748;">|</span>
+                    <a href="#" style="color: #718096; text-decoration: none;">Terms of Service</a>
+                    <span style="color: #2D3748;">|</span>
+                    <a href="#" style="color: #718096; text-decoration: none;">Developed by AspirenTech Business Solutions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

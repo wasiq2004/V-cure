@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> V-Cure Dental Specialist | Future of Healthcare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+       <!-- NAVIGATIONAL HEADER WITH DYNAMIC DROPDOWN -->
+<header>
+    <nav class="container">
+        <a href="index.html" class="logo">V CURE <span>DENTAL</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            <!-- SERVICES DROPDOWN -->
+            <li class="dropdown">
+                <a href="services.html" class="drop-trigger">Services <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="implants.html"><i class="fas fa-tooth"></i> Dental Implants</a></li>
+                    <li><a href="root-canal.html"><i class="fas fa-bolt"></i> Root Canal (RCT)</a></li>
+                    <li><a href="aligners.html"><i class="fas fa-gem"></i> Clear Aligners</a></li>
+                    <li><a href="smile-makeover.html"><i class="fas fa-star"></i> Smile Makeover</a></li>
+                    <li><a href="zirconia-crowns.html"><i class="fas fa-crown"></i> Zirconia Crowns</a></li>
+                    <li><a href="kids-dentistry.html"><i class="fas fa-child"></i> Kids Dentistry</a></li>
+                    <li><a href="wisdom-tooth.html"><i class="fas fa-briefcase-medical"></i> Wisdom Tooth Removal</a></li>
+                    <li><a href="cleaning.html"><i class="fas fa-sparkles"></i> Cleaning & Polishing</a></li>
+                    <li><a href="full-mouth.html"><i class="fas fa-sync-alt"></i> Full Mouth Rehab</a></li>
+                </ul>
+            </li>
+
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book-appointment.html" class="btn-nav">Book Appointment</a></li>
+        </ul>
+        
+        <!-- Mobile Toggle (Keep for responsiveness) -->
+        <button class="hamburger" onclick="toggleMobileMenu()" style="display:none;">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+    <section class="hero-page">
+        <div class="container grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
+            <div class="reveal">
+                <span style="color:var(--primary); font-weight:700; letter-spacing: 2px;">WELCOME TO V CURE
+                    DENTAL</span>
+                <h1 style="font-size: 4.5rem; line-height: 1.1; margin: 20px 0;">Comprehensive & <br><span
+                        style="color:var(--primary)">Advanced Dental Care.</span></h1>
+                <p style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 40px;">Serving you at Krishnagiri
+                    and Iyyappanthangal (Chennai) with painless treatments and modern technology.</p>
+                <div class="flex">
+                    <a href="book-appointment.html" class="btn-main">Book Appointment</a>
+                    <a href="https://wa.me/yournumber" class="flex"
+                        style="font-weight:700; color:var(--primary); text-decoration:none;"><i
+                            class="fab fa-whatsapp"></i> WhatsApp Support</a>
+                </div>
+            </div>
+            <div class="reveal">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800"
+                    style="width:100%; border-radius: 40px; box-shadow: 0 40px 80px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-padding">
+        <div class="text-center reveal" style="margin-bottom: 60px;">
+            <span class="tagline">OUR ADVANTAGES</span>
+            <h2>Why Patients Choose Us</h2>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 40px;">
+
+            <!-- Experienced Dentists -->
+            <div class="reveal glass-card" style="padding: 0; overflow: hidden;">
+                <img src="https://images.unsplash.com/photo-1685022036266-7db6e5161ee1?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Experienced Dentists" class="card-img-top">
+                <div style="padding: 30px;">
+                    <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-check-circle"></i>
+                        Experienced Dentists</h4>
+                    <p>Friendly and highly skilled professionals with decades of combined expertise.</p>
+                </div>
+            </div>
+
+            <!-- Painless Treatment -->
+            <div class="reveal glass-card" style="padding: 0; overflow: hidden;">
+                <img src="https://plus.unsplash.com/premium_photo-1661383966186-9f87e80947da?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Painless Dental Treatment" class="card-img-top">
+                <div style="padding: 30px;">
+                    <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-magic"></i> Painless
+                        Treatment</h4>
+                    <p>Advanced laser and digital technology ensuring a comfortable, anxiety-free experience.</p>
+                </div>
+            </div>
+
+            <!-- Strict Sterilisation -->
+            <div class="reveal glass-card" style="padding: 0; overflow: hidden;">
+                <img src="https://plus.unsplash.com/premium_photo-1661507119924-6f804e9b64a9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Sterilization Protocols" class="card-img-top">
+                <div style="padding: 30px;">
+                    <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-shield-virus"></i> Strict
+                        Sterilisation</h4>
+                    <p>We follow 7-step international hygiene protocols and class-B autoclaving.</p>
+                </div>
+            </div>
+
+            <!-- Transparent Pricing -->
+            <div class="reveal glass-card" style="padding: 0; overflow: hidden;">
+                <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Consultation and Pricing" class="card-img-top">
+                <div style="padding: 30px;">
+                    <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-tags"></i> Transparent
+                        Pricing</h4>
+                    <p>No hidden costs. We provide detailed treatment plans and ethical pricing for every budget.</p>
+                </div>
+            </div>
+
+            <!-- Flexible Timings -->
+            <div class="reveal glass-card" style="padding: 0; overflow: hidden;">
+                <img src="https://images.unsplash.com/photo-1643660526741-094639fbe53a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Clinic Timing" class="card-img-top">
+                <div style="padding: 30px;">
+                    <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-clock"></i> Flexible
+                        Timings</h4>
+                    <p>Open for early morning and late evening appointments to suit your busy work-life schedule.</p>
+                </div>
+            </div>
+
+            <!-- WhatsApp Support -->
+            <div class="reveal glass-card" style="padding: 0; overflow: hidden;">
+                <img src="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?auto=format&fit=crop&q=80&w=600"
+                    alt="Digital Support" class="card-img-top">
+                <div style="padding: 30px;">
+                    <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fab fa-whatsapp"></i> WhatsApp
+                        Support</h4>
+                    <p>Direct connectivity with our doctors for quick queries and instant appointment scheduling.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="container section-padding">
+        <div class="text-center reveal" style="margin-bottom: 60px;">
+            <span class="tagline">WORLD-CLASS TREATMENT</span>
+            <h1>Key Specialities</h1>
+        </div>
+        <!-- 4-column grid for Full HD screens -->
+        <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 30px;" id="specialtyGrid"></div>
+    </section>
+
+    <script>
+        const specialities = [
+            { name: "Dental Implants", icon: "🦷", img: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&fit=crop&q=80&w=600" },
+            { name: "Root Canal", icon: "⚡", img: "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+            { name: "Clear Aligners", icon: "💎", img: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+            { name: "Smile Makeover", icon: "✨", img: "https://images.unsplash.com/photo-1758691463393-a2aa9900af8a?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+            { name: "Kids Dentistry", icon: "👶", img: "https://images.unsplash.com/photo-1653508310895-62141575a3a9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+            { name: "Wisdom Tooth Surgery", icon: "🚑", img: "https://plus.unsplash.com/premium_photo-1661559036870-ef6643e7a472?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+            { name: "Cleaning & Polishing", icon: "✨", img: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+            { name: "Full Mouth Rehab", icon: "🔄", img: "https://images.unsplash.com/photo-1643401142249-84ef35c123c9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
+        ];
+
+        const specialtyGrid = document.getElementById('specialtyGrid');
+
+        specialities.forEach(s => {
+            specialtyGrid.innerHTML += `
+            <div class="reveal glass-card spec-card" style="padding:0; overflow:hidden;">
+                <div class="spec-img-container">
+                    <img src="${s.img}" alt="${s.name}" class="spec-img">
+                </div>
+                <div class="spec-info">
+                    <div class="spec-icon-circle">${s.icon}</div>
+                    <h3>${s.name}</h3>
+                    <a href="services.html" class="spec-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>`;
+        });
+    </script>
+    <!-- SMILE GALLERY SECTION: INFINITE AUTO-SCROLLER -->
+        <section class="section-padding"
+            style="background: var(--bg-light); border-radius: 100px 100px 0 0; overflow: hidden;">
+            <div class="container">
+                <div class="text-center reveal" style="margin-bottom: 60px;">
+                    <span class="tagline">OUR TRANSFORMATIONS</span>
+                    <h1>Smile Gallery</h1>
+                    <p style="font-size: 1.2rem; color: var(--text-muted); margin-top: 15px;">
+                        Real results: Seamless transformations that redefine confidence.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Infinite Scroll Wrapper -->
+            <div class="gallery-slider">
+                <div class="gallery-track">
+
+                    <!-- Original 6 Items -->
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://plus.unsplash.com/premium_photo-1682097288491-7e926a30cd0b?q=80&w=600"
+                                alt="Implants">
+                            <div class="gallery-overlay"><span>Full Implant Rehab</span></div>
+                        </div>
+                        <div class="gallery-label">Implants & Crowns</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=600"
+                                alt="Makeover">
+                            <div class="gallery-overlay"><span>Smile Makeover</span></div>
+                        </div>
+                        <div class="gallery-label">Veneers & Whitening</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=600"
+                                alt="Crowns">
+                            <div class="gallery-overlay"><span>Zirconia Crown</span></div>
+                        </div>
+                        <div class="gallery-label">Metal-Free Crowns</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffce47267a5?q=80&w=600"
+                                alt="Aligners">
+                            <div class="gallery-overlay"><span>Clear Aligners</span></div>
+                        </div>
+                        <div class="gallery-label">Invisible Braces</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://images.unsplash.com/photo-1468493858157-0da44aaf1d13?q=80&w=600"
+                                alt="Whitening">
+                            <div class="gallery-overlay"><span>Laser Whitening</span></div>
+                        </div>
+                        <div class="gallery-label">Teeth Whitening</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://images.unsplash.com/photo-1593054999502-d9b30402094e?q=80&w=600"
+                                alt="Bridges">
+                            <div class="gallery-overlay"><span>Fixed Bridges</span></div>
+                        </div>
+                        <div class="gallery-label">Full Mouth Rehab</div>
+                    </div>
+
+                    <!-- Duplicated 6 Items for Infinite Loop -->
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://plus.unsplash.com/premium_photo-1682097288491-7e926a30cd0b?q=80&w=600"
+                                alt="Implants">
+                            <div class="gallery-overlay"><span>Full Implant Rehab</span></div>
+                        </div>
+                        <div class="gallery-label">Implants & Crowns</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=600"
+                                alt="Makeover">
+                            <div class="gallery-overlay"><span>Smile Makeover</span></div>
+                        </div>
+                        <div class="gallery-label">Veneers & Whitening</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=600"
+                                alt="Crowns">
+                            <div class="gallery-overlay"><span>Zirconia Crown</span></div>
+                        </div>
+                        <div class="gallery-label">Metal-Free Crowns</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffce47267a5?q=80&w=600"
+                                alt="Aligners">
+                            <div class="gallery-overlay"><span>Clear Aligners</span></div>
+                        </div>
+                        <div class="gallery-label">Invisible Braces</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://images.unsplash.com/photo-1468493858157-0da44aaf1d13?q=80&w=600"
+                                alt="Whitening">
+                            <div class="gallery-overlay"><span>Laser Whitening</span></div>
+                        </div>
+                        <div class="gallery-label">Teeth Whitening</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="https://images.unsplash.com/photo-1593054999502-d9b30402094e?q=80&w=600"
+                                alt="Bridges">
+                            <div class="gallery-overlay"><span>Fixed Bridges</span></div>
+                        </div>
+                        <div class="gallery-label">Full Mouth Rehab</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="container section-padding">
+            <div class="text-center reveal" style="margin-bottom: 60px;">
+                <span class="tagline">PATIENT FEEDBACK</span>
+                <h2>What Our Patients Say</h2>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: 40px;">
+                <!-- Testimonial 1 -->
+                <div class="reveal glass-card testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">“Friendly doctor, painless treatment. I was very nervous about my root
+                        canal, but the team at V Cure made it completely stress-free!”</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Santhosh Kumar</strong>
+                            <span>Patient, Krishnagiri</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="reveal glass-card testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">“Excellent implant work. The technology they use is very advanced, and
+                        the final zirconia crown looks exactly like my natural teeth.”</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Priya Dharshini</strong>
+                            <span>Patient, Chennai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <a href="https://wa.me/yournumber" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <script src="script.js"></script>
+    <script>
+        const grid = document.getElementById('serviceGrid');
+        services.forEach(s => {
+            grid.innerHTML += `<div class="reveal glass-card"><h3>${s.icon} ${s.name}</h3><p>${s.desc}</p></div>`;
+        });
+    </script>
+
+    <!-- WHATSAPP CTA -->
+    <section class="container section-padding reveal">
+        <div class="glass-card"
+            style="background: #25D366; color: white; border: none; display: flex; justify-content: space-between; align-items: center; padding: 60px;">
+            <div style="text-align: left;">
+                <h2 style="font-size: 2.5rem;">Have a question about a service?</h2>
+                <p style="font-size: 1.2rem; opacity: 0.9;">Get an instant consultation or quote via WhatsApp.</p>
+            </div>
+            <a href="https://wa.me/yournumber" class="btn-main"
+                style="background: white; color: #25D366; display: flex; align-items: center; gap: 10px;">
+                <i class="fab fa-whatsapp"></i> Message Us Now
+            </a>
+        </div>
+    </section>
+
+</body>
+
+
+<!-- FOOTER SECTION -->
+ <footer class="reveal">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; display: block;">V-Cure
+                        <span>Dental specialist</span></a>
+                    <p>Pioneering the future of healthcare with 25 years of excellence. We provide world-class medical
+                        services with a commitment to compassion, innovation, and patient-centered care.</p>
+                    <div class="social-links" style="margin-top: 30px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Dental Implants</a></li>
+                        <li><a href="services.html">Root Canal</a></li>
+                        <li><a href="services.html">Clear Aligners</a></li>
+                        <li><a href="services.html">Smile Makeover</a></li>
+                        <li><a href="services.html">Zirconia Crowns</a></li>
+                        <li><a href="services.html">Kids Dentistry</a></li>
+                        <li><a href="services.html">Wisdom Tooth Removal</a></li>
+                        <li><a href="services.html">Cleaning and Polishing</a></li>
+                        <li><a href="services.html">Full Mouth Rehabilitation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Krishnagiri Branch – Rayappa Street Iyyappanthangal Branch – Chennai<br></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Emergency: +91 123 456 7890<br>Admin: +91 000 111 2222</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@V-Cure Dental specialist.com<br>appointments@V-Cure Dental specialist.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 V-Cure. All rights reserved.</p>
+                <div class="flex">
+                    <a href="#" style="color: #718096; text-decoration: none;">Privacy Policy</a>
+                    <span style="color: #2D3748;">|</span>
+                    <a href="#" style="color: #718096; text-decoration: none;">Terms of Service</a>
+                    <span style="color: #2D3748;">|</span>
+                    <a href="#" style="color: #718096; text-decoration: none;">Developed by AspirenTech Business
+                        Solutions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>
