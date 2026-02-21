@@ -1499,3 +1499,486 @@ footer::before {
     box-shadow: 0 10px 20px rgba(0, 122, 124, 0.2);
     border-color: var(--primary);
 }
+
+/* For Tablets and Small Laptops (under 1200px) */
+@media (max-width: 1200px) {
+    .container { max-width: 95%; padding: 0 20px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    h1 { font-size: 3.5rem !important; } /* Shrink huge titles */
+}
+
+/* For Mobile Devices (under 768px) */
+@media (max-width: 768px) {
+    /* 1. Stack all grids into 1 column */
+    .grid { 
+        grid-template-columns: 1fr !important; 
+        gap: 20px !important; 
+    }
+
+    /* 2. Fix Hero Section */
+    .hero-page { padding: 60px 0; text-align: center; }
+    .hero-page .grid { flex-direction: column-reverse; display: flex; }
+    h1 { font-size: 2.5rem !important; }
+    
+    /* 3. Hide standard nav, show Hamburger */
+    .nav-links {
+        display: none; /* We will use JS to toggle this */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    
+    .nav-links.mobile-active { display: flex; }
+    
+    .hamburger { display: block !important; cursor: pointer; border: none; background: none; font-size: 1.5rem; color: var(--primary); }
+
+    /* 4. Fix side-by-side sections (About/Services) */
+    .grid.col-2 { grid-template-columns: 1fr !important; }
+    .grid.col-2 div { padding: 0 !important; } /* Remove side paddings */
+    
+    /* 5. Fix Gallery */
+    .gallery-item { width: 280px; } /* Slightly smaller on mobile */
+    
+    /* 6. Form Adjustments */
+    .form-premium-container { padding: 30px 20px !important; }
+    .time-grid-container { grid-template-columns: 1fr 1fr !important; } /* 2 columns instead of 4 */
+}
+
+/* --- RESPONSIVE FOOTER FIX --- */
+
+/* Base Footer Grid (Desktop 1920x1080) */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+/* Tablet Layout (1024px and below) */
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr; /* 2x2 Grid */
+        gap: 40px;
+    }
+}
+
+/* Mobile Layout (768px and below) */
+@media (max-width: 768px) {
+    footer {
+        padding: 60px 0 30px;
+        text-align: center; /* Center text for better mobile UI */
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr; /* Stack everything in 1 column */
+        gap: 40px;
+    }
+
+    .footer-col .logo {
+        justify-content: center;
+        margin: 0 auto 25px;
+    }
+
+    .social-links {
+        justify-content: center; /* Center icons on mobile */
+        margin-top: 20px;
+    }
+
+    .contact-info li {
+        flex-direction: column; /* Icon above text on mobile */
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Fix for the Privacy | Terms | Developer links */
+    .footer-bottom .flex {
+        flex-direction: column; /* Stack the links vertically */
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .footer-bottom .flex span {
+        display: none; /* Hide the "|" vertical bars on mobile */
+    }
+    
+    .footer-bottom p {
+        font-size: 0.85rem;
+    }
+} 
+  /* =========================================
+       Process Flow Animations & S-Curve Layout 
+       ========================================= */
+
+    /* Container for each card to hold absolute arrows */
+    .step-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .step-wrapper .glass-card {
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    /* Common Arrow Styling (Single Arrows) */
+    .process-arrow {
+        position: absolute;
+        font-size: 24px;
+        color: var(--primary-color, #0ba2a8); /* Fallback to dental teal */
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white; /* Adds a clean background circle so it pops */
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Default (Mobile First) - All point down */
+    .desktop-arrow { display: none; }
+    .mobile-arrow { display: block; }
+
+    .process-arrow {
+        bottom: -20px; 
+        left: 50%;
+        transform: translate(-50%, 50%);
+        animation: bounceDown 1.5s infinite;
+    }
+
+    @keyframes bounceDown {
+        0%, 100% { transform: translate(-50%, 50%); }
+        50% { transform: translate(-50%, calc(50% + 8px)); }
+    }
+
+    /* Desktop View: S-Curve Snake Pattern */
+    @media (min-width: 992px) {
+        .desktop-arrow { display: block; }
+        .mobile-arrow { display: none; }
+
+        /* Reordering Grid to create the Snake pattern:
+           Row 1: Step 1, Step 2, Step 3 (Left to Right)
+           Row 2: Step 6, Step 5, Step 4 (Right to Left Visually) */
+        .process-grid .card-1 { order: 1; }
+        .process-grid .card-2 { order: 2; }
+        .process-grid .card-3 { order: 3; }
+        
+        .process-grid .card-6 { order: 4; } /* Placed in Bottom Left */
+        .process-grid .card-5 { order: 5; } /* Placed in Bottom Middle */
+        .process-grid .card-4 { order: 6; } /* Placed in Bottom Right */
+
+        /* Card 1 & 2 -> Pointing Right */
+        .dir-right {
+            top: 50%;
+            right: -15px;
+            bottom: auto;
+            left: auto;
+            transform: translate(50%, -50%);
+            animation: bounceRight 1.5s infinite;
+        }
+
+        /* Card 4 & 5 -> Pointing Left */
+        .dir-left {
+            top: 50%;
+            left: -15px;
+            bottom: auto;
+            right: auto;
+            transform: translate(-50%, -50%);
+            animation: bounceLeft 1.5s infinite;
+        }
+
+        /* Card 3 -> Pointing Down to Card 4 */
+        .dir-down {
+            bottom: -15px;
+            left: 50%;
+            top: auto;
+            right: auto;
+            transform: translate(-50%, 50%);
+            animation: bounceDown 1.5s infinite;
+        }
+
+        @keyframes bounceRight {
+            0%, 100% { transform: translate(50%, -50%); }
+            50% { transform: translate(calc(50% + 8px), -50%); } 
+        }
+
+        @keyframes bounceLeft {
+            0%, 100% { transform: translate(-50%, -50%); }
+            50% { transform: translate(calc(-50% - 8px), -50%); } 
+        }
+    }
+
+    /* Mobile/Tablet Fallback: Give extra gap for the down arrows */
+    @media (max-width: 991px) {
+        .process-grid {
+            grid-template-columns: 1fr !important;
+            gap: 50px !important; 
+        }
+    }
+        /* =========================================
+       Image Left / Text Right Carousel
+       ========================================= */
+    .split-carousel-wrapper {
+        position: relative;
+        width: 100%;
+        padding: 20px 0 40px 0;
+    }
+
+    .split-carousel-container {
+        position: relative; /* Essential for containing the absolute arrows */
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+        background: #ffffff; /* Adds clean white backing behind the slides */
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Soft shadow for the whole box */
+    }
+
+    /* The Scrolling Track */
+    .split-carousel-track {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none; /* Hides scrollbar in Firefox */
+    }
+
+    .split-carousel-track::-webkit-scrollbar {
+        display: none; /* Hides scrollbar in Chrome/Safari */
+    }
+
+    /* Individual Slide */
+    .split-slide {
+        flex: 0 0 100%; /* Forces each slide to be exactly 100% of the container width */
+        scroll-snap-align: center; 
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        gap: 50px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    /* Image Container Styling */
+    .slide-image {
+        width: 50%;
+        height: 380px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        position: relative;
+    }
+
+    .slide-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .split-slide:hover .slide-image img {
+        transform: scale(1.05); 
+    }
+
+    /* Text Content Styling */
+    .slide-content {
+        width: 50%;
+        padding: 20px;
+        text-align: left;
+        margin: 0;
+        background: transparent !important;
+        box-shadow: none !important; /* Removes internal glass-card shadow for a cleaner look */
+    }
+
+    /* =========================================
+       Navigation Arrows (100% Clickable)
+       ========================================= */
+    .nav-arrow {
+        position: absolute;
+        top: 50%; 
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background: white;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        font-size: 1.2rem;
+        color: var(--primary-color, #0ba2a8); 
+        cursor: pointer;
+        z-index: 100; /* Forces arrows to the absolute top layer */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .nav-arrow:hover {
+        background: var(--primary-color, #0ba2a8);
+        color: white;
+        transform: translateY(-50%) scale(1.1);
+    }
+
+    /* Positioned slightly inside the box */
+    .prev-arrow { left: 15px; }
+    .next-arrow { right: 15px; }
+
+    /* =========================================
+       Carousel Indicators (Pill Dots)
+       ========================================= */
+    .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .carousel-dot {
+        width: 12px;
+        height: 12px;
+        background-color: #d1d1d1;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .carousel-dot:hover { background-color: #a1a1a1; }
+
+    .carousel-dot.active {
+        width: 35px;
+        background-color: var(--primary-color, #0ba2a8);
+    }
+
+    /* Mobile & Tablet Layout */
+    @media (max-width: 991px) {
+        .split-slide {
+            flex-direction: column !important;
+            gap: 20px;
+            padding: 15px;
+        }
+
+        .slide-image, .slide-content { width: 100%; }
+        .slide-image { height: 280px; }
+        .slide-content { padding: 10px 10px 30px 10px; text-align: center; }
+
+        /* Moves arrows up so they sit exactly perfectly over the image on mobile */
+        .nav-arrow {
+            top: 155px; /* Centers exactly on the 280px high image + padding */
+            width: 40px;
+            height: 40px;
+            font-size: 1rem;
+        }
+        .prev-arrow { left: 20px; }
+        .next-arrow { right: 20px; }
+    }
+     @media (max-width: 991px) {
+        .container .grid {
+            grid-template-columns: 1fr !important;
+            gap: 20px !important;
+        }
+    }
+       .faq-container {
+        max-width: 800px; /* Limits width so it's easy to read */
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .faq-item {
+        padding: 25px 30px;
+        text-align: left;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 20px;
+        margin: 0;
+    }
+
+    .faq-item:hover {
+        transform: translateY(-3px); /* Subtle lift effect on hover */
+    }
+
+    /* The Question Row */
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    /* The Arrow Icon */
+    .faq-icon {
+        color: var(--primary-color, #0ba2a8); /* Fallback to teal */
+        font-size: 1.2rem;
+        transition: transform 0.4s ease; /* Smooth rotation */
+        background: rgba(11, 162, 168, 0.1); /* Subtle background circle */
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    /* The Answer Wrapper (Uses CSS Grid for perfect smooth opening) */
+    .faq-answer-wrapper {
+        display: grid;
+        grid-template-rows: 0fr; /* Collapsed by default */
+        transition: grid-template-rows 0.4s ease;
+    }
+
+    .faq-answer-inner {
+        overflow: hidden;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* =========================================
+       ACTIVE STATE (When Clicked)
+       ========================================= */
+    /* Expands the answer */
+    .faq-item.active .faq-answer-wrapper {
+        grid-template-rows: 1fr;
+    }
+
+    /* Adds spacing only when open */
+    .faq-item.active .faq-answer-inner {
+        padding-top: 15px; 
+    }
+
+    /* Rotates the arrow */
+    .faq-item.active .faq-icon {
+        transform: rotate(180deg);
+        background: var(--primary-color, #0ba2a8);
+        color: white;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 767px) {
+        .faq-item {
+            padding: 20px;
+        }
+        .faq-question {
+            font-size: 1rem;
+            gap: 15px; /* Ensures text doesn't overlap icon */
+        }
+    }
